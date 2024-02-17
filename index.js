@@ -1,4 +1,4 @@
-let myLeads = ["awesome", "epic", "lol"];
+let myLeads = [];
 const inputBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEL = document.getElementById("ul-el");
@@ -6,8 +6,15 @@ const ulEL = document.getElementById("ul-el");
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
   console.log(myLeads);
+  renderLeads();
 });
 
-for (let i = 0; i < myLeads.length; i++) {
-  ulEL.innerHTML += "<li>" + myLeads[i] + "</li>";
+function renderLeads() {
+  let listItems = "";
+  for (let i = 0; i < myLeads.length; i++) {
+    listItems += "<li>" + myLeads[i] + "</li>";
+    console.log(listItems);
+  }
+
+  ulEL.innerHTML = listItems;
 }
