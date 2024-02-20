@@ -37,5 +37,10 @@ button {
     color: white;
     font-weight: bold;
     background-color: #5f9341;
-    border: none;
+    border: 1px solid #5f9341;
+}
+
+#delete-btn {
+    color: #5f9341;
+    background: #fff;
 }
