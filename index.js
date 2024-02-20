@@ -6,7 +6,10 @@ const ulEL = document.getElementById("ul-el");
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
   inputEl.value = "";
+  const stringifyMyLeads = JSON.stringify(myLeads);
+  localStorage.setItem("myLeads", stringifyMyLeads);
   renderLeads();
+  console.log(localStorage.getItem("myLeads"));
 });
 
 function renderLeads() {
