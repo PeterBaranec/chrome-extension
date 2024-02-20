@@ -8,6 +8,21 @@ body {
     margin: 0;
     padding: .625rem;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 25rem;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+a {
+    color: #5f9341;
 }
 
 input {
